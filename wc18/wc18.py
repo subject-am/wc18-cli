@@ -5,7 +5,8 @@ import json
 import importlib
 import sys
 
-file_dir = os.path.dirname("teamsgroups.py")
+#file_dir = os.path.dirname("teamsgroups.py")
+file_dir = os.path.dirname(os.path.abspath(__file__)) # pip installs teamsgroups.py on the same directory
 sys.path.append(file_dir)
 from teamsgroups import Team , Group , LoadTeam ,GetData
 
